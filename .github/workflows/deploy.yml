@@ -26,6 +26,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Sync timetable and meals
+        # 참고 사이트가 GitHub Actions IP를 일시 차단해도 마지막 성공 데이터로 배포합니다.
+        continue-on-error: true
         run: node scripts/sync-neis.mjs
         env:
           NEIS_API_KEY: ${{ secrets.NEIS_API_KEY }}
