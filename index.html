@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#17213a" />
+    <meta name="description" content="한세사이버보안고등학교 학생을 위한 시간표, 급식, 교내 인트라넷" />
+    <title>HANSEI LINK — 한세사이버보안고 학생 포털</title>
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문 바로가기</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="주요 메뉴">
+        <a class="brand" href="#/home" aria-label="HANSEI LINK 홈">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span class="brand-copy"><strong>HANSEI LINK</strong><small>STUDENT LIFE, CONNECTED</small></span>
+        </a>
+
+        <nav class="side-nav">
+          <a href="#/home" data-route="home"><span aria-hidden="true">⌂</span><b>홈</b></a>
+          <a href="#/timetable" data-route="timetable"><span aria-hidden="true">▦</span><b>시간표</b></a>
+          <a href="#/meal" data-route="meal"><span aria-hidden="true">♨</span><b>급식</b></a>
+          <a href="#/intranet" data-route="intranet"><span aria-hidden="true">◇</span><b>인트라넷</b></a>
+        </nav>
+
+        <div class="sidebar-foot">
+          <div class="local-badge"><i></i><span><strong>로컬 모드</strong><small>이 기기에 자동 저장</small></span></div>
+          <button class="ghost-button full" id="open-settings" type="button"><span aria-hidden="true">⚙</span> 내 정보 설정</button>
+        </div>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="today-label"></p>
+            <h1 id="page-title">오늘의 한세</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button connection" id="connection-status" type="button" title="연결 상태"><i></i><span>온라인</span></button>
+            <button class="icon-button" id="command-button" type="button" title="빠른 검색 (Ctrl+K)"><span aria-hidden="true">⌕</span><kbd>⌘ K</kbd></button>
+            <button class="profile-button" id="profile-button" type="button" aria-label="내 정보 설정"><span id="profile-initial">나</span></button>
+          </div>
+        </header>
+
+        <main id="main-content" tabindex="-1"></main>
+      </section>
+    </div>
+
+    <nav class="mobile-nav" aria-label="모바일 주요 메뉴">
+      <a href="#/home" data-route="home"><span>⌂</span><b>홈</b></a>
+      <a href="#/timetable" data-route="timetable"><span>▦</span><b>시간표</b></a>
+      <a href="#/meal" data-route="meal"><span>♨</span><b>급식</b></a>
+      <a href="#/intranet" data-route="intranet"><span>◇</span><b>인트라넷</b></a>
+    </nav>
+
+    <dialog id="app-dialog" class="app-dialog">
+      <div id="dialog-content"></div>
+    </dialog>
+
+    <div id="command-palette" class="command-palette" hidden>
+      <button class="palette-backdrop" type="button" data-close-palette aria-label="검색 닫기"></button>
+      <section role="dialog" aria-modal="true" aria-labelledby="palette-title">
+        <h2 class="sr-only" id="palette-title">빠른 검색</h2>
+        <div class="palette-input">
+          <span aria-hidden="true">⌕</span>
+          <input id="command-input" type="search" placeholder="메뉴와 교내 서비스를 검색하세요" autocomplete="off" />
+          <kbd>ESC</kbd>
+        </div>
+        <div id="command-results" class="command-results"></div>
+      </section>
+    </div>
+
+    <div class="toast-region" id="toast-region" aria-live="polite"></div>
+    <script src="./config.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

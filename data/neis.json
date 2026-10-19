@@ -1,0 +1,1212 @@
+{
+  "version": 2,
+  "generatedAt": "2026-10-19T03:22:53.081Z",
+  "school": {
+    "name": "한세사이버보안고등학교",
+    "officeCode": "B10",
+    "schoolCode": "7010911"
+  },
+  "source": {
+    "mode": "public",
+    "timetable": "time.hsoc.kr 공개 조회",
+    "meals": "NEIS Open API"
+  },
+  "range": {
+    "previousWeeks": 0,
+    "nextWeeks": 0
+  },
+  "weeks": {
+    "2026-10-19": {
+      "from": "2026-10-19",
+      "to": "2026-10-23",
+      "meals": [
+        {
+          "ATPT_OFCDC_SC_CODE": "B10",
+          "ATPT_OFCDC_SC_NM": "서울특별시교육청",
+          "SD_SCHUL_CODE": "7010911",
+          "SCHUL_NM": "한세사이버보안고등학교",
+          "MMEAL_SC_CODE": "2",
+          "MMEAL_SC_NM": "중식",
+          "MLSV_YMD": "20261019",
+          "MLSV_FGR": 182,
+          "DDISH_NM": "현미밥 <br/>소갈비탕(당면사리) (2.5.6.13.16)<br/>참나물새콤겉절이 (5.6.13)<br/>해물김치전 (1.5.6.9.13.17)<br/>석박지 (9)<br/>마카롱 (1.2.6)",
+          "ORPLC_INFO": "쇠고기(종류) : 국내산(육우)<br/>쇠고기 식육가공품 : 국내산<br/>돼지고기 : 국내산<br/>돼지고기 식육가공품 : 국내산<br/>닭고기 : 국내산<br/>닭고기 식육가공품 : 국내산<br/>오리고기 : 국내산<br/>오리고기 가공품 : 국내산<br/>쌀 : 국내산<br/>배추 : 국내산<br/>고춧가루 : 국내산<br/>콩 : 국내산<br/>낙지 : 국내산<br/>고등어 : 국내산<br/>갈치 : 국내산<br/>오징어 : 국내산<br/>꽃게 : 국내산<br/>참조기 : 국내산<br/>비고 : ",
+          "CAL_INFO": "912.5 Kcal",
+          "NTR_INFO": "탄수화물(g) : 133.4<br/>단백질(g) : 30.7<br/>지방(g) : 26.4<br/>비타민A(R.E) : 106.7<br/>티아민(mg) : 0.3<br/>리보플라빈(mg) : 0.6<br/>비타민C(mg) : 8.6<br/>칼슘(mg) : 192.5<br/>철분(mg) : 6.3",
+          "MLSV_FROM_YMD": "20261019",
+          "MLSV_TO_YMD": "20261019",
+          "LOAD_DTM": "20261019"
+        }
+      ],
+      "timetables": {
+        "cloud:1:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "통합사회2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "한국사2"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통영어2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통수학2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통국어2"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "컴퓨터 시스템 일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합과학2"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합과학2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "한국사2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합사회2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "음악"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "공통수학2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "공통국어2"
+          }
+        ],
+        "cloud:1:2": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "1",
+            "ITRT_CNTNT": "컴퓨터 시스템 일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "컴퓨터 시스템 일반"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통영어2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통수학2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통국어2"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "컴퓨터 시스템 일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "공통수학2"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합과학2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "한국사2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합사회2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "4",
+            "ITRT_CNTNT": "한국사2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "5",
+            "ITRT_CNTNT": "통합과학2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "1",
+            "CLASS_NM": "2",
+            "PERIO": "6",
+            "ITRT_CNTNT": "공통영어2"
+          }
+        ],
+        "cloud:2:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "진로활동"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "미적분Ⅰ"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "일본어 회화"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "미적분Ⅰ"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "독서와 작문"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "* 모의해킹"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "독서와 작문"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 빅데이터 분석 결과 시각화"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "웹 프로그래밍 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "* 빅데이터 분석 결과 시각화"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "* 빅데이터 분석 결과 시각화"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "* 빅데이터 분석 결과 시각화"
+          }
+        ],
+        "cloud:2:2": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "1",
+            "ITRT_CNTNT": "일본어 회화"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "독서와 작문"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "일본어 회화"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "미적분Ⅰ"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "독서와 작문"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "* 모의해킹"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 빅데이터 분석 결과 시각화"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "웹 프로그래밍 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "4",
+            "ITRT_CNTNT": "* 모의해킹"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "5",
+            "ITRT_CNTNT": "* 모의해킹"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "2",
+            "CLASS_NM": "2",
+            "PERIO": "6",
+            "ITRT_CNTNT": "* 모의해킹"
+          }
+        ],
+        "cloud:3:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "토익연습일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "토익연습일반"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "토익연습일반"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "정보처리수학"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "취업 실무 국어"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "자료 구조"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 애플리케이션 테스트 수행"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 애플리케이션 테스트 수행"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 통계 기반 데이터 분석"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "클라우드 보안"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "정보처리수학"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "취업 실무 국어"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "스포츠 생활"
+          }
+        ],
+        "cloud:3:2": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "1",
+            "ITRT_CNTNT": "* 애플리케이션 테스트 수행"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "* 애플리케이션 테스트 수행"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "토익연습일반"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "정보처리수학"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "취업 실무 국어"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "2",
+            "ITRT_CNTNT": "자료 구조"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 통계 기반 데이터 분석"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 애플리케이션 테스트 수행"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 통계 기반 데이터 분석"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "3",
+            "ITRT_CNTNT": "클라우드 보안"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "4",
+            "ITRT_CNTNT": "* 통계 기반 데이터 분석"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "5",
+            "ITRT_CNTNT": "토익연습일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "클라우드보안과",
+            "GRADE": "3",
+            "CLASS_NM": "2",
+            "PERIO": "6",
+            "ITRT_CNTNT": "취업 실무 국어"
+          }
+        ],
+        "software:1:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "공통국어2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "통합과학2"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통영어2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통수학2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통국어2"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "컴퓨터 시스템 일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합사회2"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합과학2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "한국사2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합사회2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "공통수학2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "통합사회2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "통합과학2"
+          }
+        ],
+        "software:2:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "미적분Ⅰ"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "일본어 회화"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "일본어 회화"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "미적분Ⅰ"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "독서와 작문"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "인공지능 일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "운동과 건강"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "웹 프로그래밍 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "독서와 작문"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "인공지능 일반"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "지능형소프트웨어과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "인공지능 일반"
+          }
+        ],
+        "game:1:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "컴퓨터 그래픽"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "컴퓨터 그래픽"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통영어2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통수학2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "공통국어2"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "컴퓨터 그래픽"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "컴퓨터 그래픽"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합과학2"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "한국사2"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "통합사회2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "컴퓨터 그래픽"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "체육2"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "1",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "한국사2"
+          }
+        ],
+        "game:2:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "* 게임 콘셉트 기획"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "* 게임 콘셉트 기획"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "일본어 회화"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "미적분Ⅰ"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "독서와 작문"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "* 게임 콘셉트 기획"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 게임 콘셉트 기획"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 게임 2D 배경 제작"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 게임 클라이언트 프로그래밍"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "* 게임 클라이언트 프로그래밍"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "* 게임 클라이언트 프로그래밍"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "2",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "* 게임 클라이언트 프로그래밍"
+          }
+        ],
+        "game:3:1": [
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "1",
+            "ITRT_CNTNT": "정보처리수학"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "토익연습일반"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "토익연습일반"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "정보처리수학"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "취업 실무 국어"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "2",
+            "ITRT_CNTNT": "* 게임 레벨 기획"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "취업 실무 국어"
+          },
+          {
+            "ALL_TI_YMD": "20261020",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261021",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 게임 3D 배경 제작"
+          },
+          {
+            "ALL_TI_YMD": "20261022",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 게임 웹 프로그래밍"
+          },
+          {
+            "ALL_TI_YMD": "20261023",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "3",
+            "ITRT_CNTNT": "* 가상현실 애니메이션 디자인"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "4",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "5",
+            "ITRT_CNTNT": "자료구조 실무"
+          },
+          {
+            "ALL_TI_YMD": "20261019",
+            "DDDEP_NM": "메타버스게임과",
+            "GRADE": "3",
+            "CLASS_NM": "1",
+            "PERIO": "6",
+            "ITRT_CNTNT": "자료구조 실무"
+          }
+        ]
+      },
+      "warnings": []
+    }
+  }
+}

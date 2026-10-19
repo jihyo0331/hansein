@@ -1,0 +1,14 @@
+{
+  "name": "HANSEI LINK — 한세사이버보안고 학생 포털",
+  "short_name": "HANSEI LINK",
+  "description": "시간표, 급식과 교내 인트라넷을 한곳에서",
+  "lang": "ko",
+  "start_url": "./#/home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f4ef",
+  "theme_color": "#17213a",
+  "icons": [
+    { "src": "./assets/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
