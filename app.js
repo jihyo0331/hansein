@@ -1,5 +1,6 @@
 import { api, storage } from "./api.js";
 import { DEPARTMENTS, PERIODS, MEALS, NOTICES, SCHOOL_SERVICES, CALENDAR_EVENTS } from "./data.js";
+import { currentSchoolPeriodIndex, getSchoolCountdown, seoulTimeParts } from "./clock.js";
 
 const main = document.querySelector("#main-content");
 const dialog = document.querySelector("#app-dialog");
@@ -13,6 +14,7 @@ const paletteResults = document.querySelector("#command-results");
 const DEFAULT_SETTINGS = { name: "한세인", department: "cloud", grade: "1", classNo: "1" };
 const savedSettings = storage.get("settings", {});
 const shouldPromptForProfile = !storage.hasCookie("settings");
+let clockOffsetMs = 0;
 const state = {
   settings: { ...DEFAULT_SETTINGS, ...savedSettings },
   selectedMealDay: Math.min(Math.max(new Date().getDay() - 1, 0), 4),
@@ -55,13 +57,6 @@ function weekdayDates(offset = 0) {
   });
 }
 
-function currentPeriodIndex() {
-  const now = new Date();
-  const minutes = now.getHours() * 60 + now.getMinutes();
-  const times = [[540,590],[600,650],[660,710],[720,770],[830,880],[890,940],[950,1000]];
-  return times.findIndex(([start, end]) => minutes >= start && minutes <= end);
-}
-
 function relativeTime(timestamp) {
   const diff = Date.now() - timestamp;
   if (diff < 60_000) return "방금 전";
@@ -70,19 +65,40 @@ function relativeTime(timestamp) {
   return `${Math.floor(diff / 86_400_000)}일 전`;
 }
 
-function getCountdown() {
-  const now = new Date();
-  const lunch = new Date(now); lunch.setHours(12, 50, 0, 0);
-  const end = new Date(now); end.setHours(16, 40, 0, 0);
-  let target = lunch; let label = "점심시간까지";
-  if (now >= lunch) { target = end; label = "종례까지"; }
-  if (now >= end || now.getDay() === 0 || now.getDay() === 6) {
-    return { label: "오늘도 좋은 하루", time: "READY", detail: "다음 등교일을 준비해요" };
+function schoolNow() {
+  return new Date(Date.now() + clockOffsetMs);
+}
+
+function updateCountdown() {
+  const card = document.querySelector("[data-countdown]");
+  if (!card) return;
+  const countdown = getSchoolCountdown(schoolNow());
+  const label = card.querySelector("[data-countdown-label]");
+  const time = card.querySelector("[data-countdown-time]");
+  const detail = card.querySelector("[data-countdown-detail]");
+  label.textContent = countdown.label;
+  time.textContent = countdown.time;
+  detail.textContent = countdown.detail;
+  card.dataset.phase = countdown.phase;
+  card.setAttribute("aria-label", `${countdown.label} ${countdown.time}. ${countdown.detail}`);
+  document.querySelectorAll(".schedule-row[data-period-index]").forEach((row) => {
+    row.classList.toggle("current", Number(row.dataset.periodIndex) === countdown.periodIndex);
+  });
+}
+
+async function syncClock() {
+  if (!location.protocol.startsWith("http") || !navigator.onLine) return;
+  const startedAt = Date.now();
+  try {
+    const response = await fetch(`./?clock-sync=${startedAt}`, { method: "HEAD", cache: "no-store" });
+    const finishedAt = Date.now();
+    const serverDate = Date.parse(response.headers.get("Date") || "");
+    if (!response.ok || !Number.isFinite(serverDate)) throw new Error("시간 응답 없음");
+    clockOffsetMs = serverDate + (finishedAt - startedAt) / 2 - finishedAt;
+    updateCountdown();
+  } catch {
+    clockOffsetMs = 0;
   }
-  const diff = Math.max(0, target - now);
-  const hours = Math.floor(diff / 3_600_000);
-  const minutes = Math.floor((diff % 3_600_000) / 60_000);
-  return { label, time: hours ? `${hours}h ${pad(minutes)}m` : `${minutes}m`, detail: target === lunch ? "오후 수업도 파이팅!" : "조금만 더 힘내요" };
 }
 
 function departmentLabel(value = state.settings.department) {
@@ -125,18 +141,18 @@ function toast(message) {
 
 function updateChrome(route) {
   titleElement.textContent = ROUTES[route].title;
-  const now = new Date();
-  todayLabel.textContent = new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "long", day: "numeric", weekday: "long" }).format(now);
+  const now = schoolNow();
+  todayLabel.textContent = new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", year: "numeric", month: "long", day: "numeric", weekday: "long" }).format(now);
   document.querySelectorAll("[data-route]").forEach((link) => link.classList.toggle("active", link.dataset.route === route));
   document.querySelector("#profile-initial").textContent = state.settings.name.trim().charAt(0) || "나";
 }
 
 function renderScheduleList(schedule) {
-  const todayIndex = Math.min(Math.max(new Date().getDay() - 1, 0), 4);
-  const current = currentPeriodIndex();
+  const todayIndex = Math.min(Math.max(seoulTimeParts(schoolNow()).day - 1, 0), 4);
+  const current = currentSchoolPeriodIndex(schoolNow());
   return `<div class="schedule-list">${PERIODS.slice(0, 6).map((period, index) => {
     const item = schedule[index][todayIndex];
-    return `<div class="schedule-row ${current === index ? "current" : ""}">
+    return `<div class="schedule-row ${current === index ? "current" : ""}" data-period-index="${index}">
       <span class="period">${period.no}</span>
       <div><strong>${escapeHTML(item.subject)}</strong><small>${[item.teacher, item.room].filter(Boolean).map(escapeHTML).join(" · ") || "교실 정보 없음"}</small></div>
       <span class="time">${period.time}</span>
@@ -153,8 +169,8 @@ async function renderHome() {
   const { schedule } = timetableResult;
   const { meals } = mealResult;
   const { notices } = noticeResult;
-  const countdown = getCountdown();
-  const dayIndex = Math.min(Math.max(new Date().getDay() - 1, 0), 4);
+  const countdown = getSchoolCountdown(schoolNow());
+  const dayIndex = Math.min(Math.max(seoulTimeParts(schoolNow()).day - 1, 0), 4);
   const meal = meals[dayIndex];
   main.innerHTML = `
     <div class="page">
@@ -165,7 +181,7 @@ async function renderHome() {
           <p>시간표부터 급식, 학교 소식까지 한눈에 확인하세요.</p>
         </div>
         <div class="hero-visual">
-          <div class="countdown"><small>${countdown.label}</small><strong>${countdown.time}</strong><span>${countdown.detail}</span></div>
+          <div class="countdown" data-countdown data-phase="${countdown.phase}" role="timer" aria-live="off" aria-label="${escapeHTML(`${countdown.label} ${countdown.time}. ${countdown.detail}`)}"><small data-countdown-label>${countdown.label}</small><strong data-countdown-time>${countdown.time}</strong><span data-countdown-detail>${countdown.detail}</span></div>
         </div>
       </section>
 
@@ -435,8 +451,11 @@ document.querySelector("#command-button").addEventListener("click", openPalette)
 paletteInput.addEventListener("input", (event) => renderPaletteResults(event.target.value.trim()));
 dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
 window.addEventListener("hashchange", render);
-window.addEventListener("online", updateConnection);
+window.addEventListener("online", () => { updateConnection(); syncClock(); });
 window.addEventListener("offline", updateConnection);
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) { updateCountdown(); syncClock(); }
+});
 window.addEventListener("keydown", (event) => {
   if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") { event.preventDefault(); openPalette(); }
   if (event.key === "Escape" && !palette.hidden) closePalette();
@@ -456,6 +475,9 @@ if (api.mode === "neis") {
   document.querySelector(".local-badge small").textContent = "실시간 데이터 사용 중";
 }
 updateConnection();
+syncClock();
+setInterval(updateCountdown, 1000);
+setInterval(syncClock, 10 * 60 * 1000);
 render().then(() => {
   if (shouldPromptForProfile) openSettings({ firstVisit: true });
 });

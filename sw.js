@@ -1,10 +1,11 @@
-const CACHE = "hansei-link-v12";
+const CACHE = "hansei-link-v13";
 const ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./config.js",
   "./data.js",
+  "./clock.js",
   "./api.js",
   "./app.js",
   "./manifest.webmanifest",
