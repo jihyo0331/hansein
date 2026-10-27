@@ -1,6 +1,6 @@
-import { api, storage } from "./api.js?v=15";
-import { DEPARTMENTS, PERIODS, MEALS, NOTICES, SCHOOL_SERVICES, CALENDAR_EVENTS } from "./data.js?v=15";
-import { currentSchoolPeriodIndex, getSchoolCountdown, seoulTimeParts } from "./clock.js?v=15";
+import { api, storage } from "./api.js?v=16";
+import { DEPARTMENTS, PERIODS, MEALS, NOTICES, SCHOOL_SERVICES, CALENDAR_EVENTS } from "./data.js?v=16";
+import { currentSchoolPeriodIndex, getSchoolCountdown, seoulTimeParts } from "./clock.js?v=16";
 
 const main = document.querySelector("#main-content");
 const dialog = document.querySelector("#app-dialog");
@@ -483,5 +483,5 @@ render().then(() => {
 });
 
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js?v=15", { updateViaCache: "none" }).catch(() => {}));
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js?v=16", { updateViaCache: "none" }).catch(() => {}));
 }

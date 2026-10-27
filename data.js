@@ -9,9 +9,9 @@ export const PERIODS = [
   { no: 2, time: "09:40–10:30" },
   { no: 3, time: "10:40–11:30" },
   { no: 4, time: "11:40–12:30" },
-  { no: 5, time: "13:30–14:20" },
-  { no: 6, time: "14:30–15:20" },
-  { no: 7, time: "15:30–16:20" }
+  { no: 5, time: "13:20–14:10" },
+  { no: 6, time: "14:20–15:10" },
+  { no: 7, time: "15:20–16:10" }
 ];
 
 const SUBJECT_POOLS = {
