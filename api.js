@@ -1,4 +1,4 @@
-import { makeSchedule, MEALS, NOTICES, PERIODS, DEPARTMENTS } from "./data.js";
+import { makeSchedule, MEALS, NOTICES, PERIODS, DEPARTMENTS } from "./data.js?v=15";
 
 const CONFIG = window.HANSEI_CONFIG || { mode: "local", apiBaseUrl: "", endpoints: {} };
 const PREFIX = "hansei-link:";

@@ -5,13 +5,13 @@ export const DEPARTMENTS = [
 ];
 
 export const PERIODS = [
-  { no: 1, time: "09:00–09:50" },
-  { no: 2, time: "10:00–10:50" },
-  { no: 3, time: "11:00–11:50" },
-  { no: 4, time: "12:00–12:50" },
-  { no: 5, time: "13:50–14:40" },
-  { no: 6, time: "14:50–15:40" },
-  { no: 7, time: "15:50–16:40" }
+  { no: 1, time: "08:40–09:30" },
+  { no: 2, time: "09:40–10:30" },
+  { no: 3, time: "10:40–11:30" },
+  { no: 4, time: "11:40–12:30" },
+  { no: 5, time: "13:30–14:20" },
+  { no: 6, time: "14:30–15:20" },
+  { no: 7, time: "15:30–16:20" }
 ];
 
 const SUBJECT_POOLS = {
